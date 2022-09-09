@@ -1,0 +1,8 @@
+pyperclip
+rich
+getpass
+Crypto
+argparse
+hashlib
+base64
+pymongo
