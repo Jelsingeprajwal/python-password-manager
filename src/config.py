@@ -6,7 +6,7 @@ import hashlib
 import random
 import string
 console = Console()
-print('config.py')
+# print('config.py')
 
 
 def generateDeviceSecret(length=10):
@@ -19,9 +19,9 @@ def config():
 
     while 1:
         mp = getpass("Enter the Master password: ")
-        if mp == getpass("Re-Type password") and mp != "":
+        if mp == getpass("Re-Type password: ") and mp != "":
             break
-        printc("[yellow]Please try again[/yellow]")
+        printc("[yellow] Please try again[/yellow]")
     # hash the master password
     hashed_mp = hashlib.sha256(mp.encode()).hexdigest()
     printc("[green][+][/green] Generated hash of MASTER PASSWORD")
@@ -40,4 +40,4 @@ def config():
 
 config()
 
-print('config.py end')
+# print('config.py end')
